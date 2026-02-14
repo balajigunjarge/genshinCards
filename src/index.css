@@ -17,6 +17,17 @@
 
 
 
+
+@font-face {
+    font-family: "league" ;
+    src: url(/fonts/LeagueSpartan-VF.woff2) format("woff2-variations");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 html {
     scroll-behavior: smooth;
     user-select: none;
@@ -36,7 +47,7 @@ html {
 
 body {
     background-color: #02060e;
-    font-family: 'Poppins', sans-serif;
+
     color: rgb(231, 231, 231);
     display: flex;
     justify-content: center;
@@ -48,9 +59,14 @@ body {
 
 .home {
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    background: url(https://my.spline.design/animatedbackgroundgradientforweb-w2jEMT9jcQAC3l1GfHqGaELg/) center/cover no-repeat;
+   
   
    
    
@@ -59,8 +75,8 @@ body {
 }
 
 .card {
-    width: clamp(360px,calc(24vw + 0.9rem), 600px);
-    aspect-ratio: 16/9;
+    width: clamp(360px,calc(35vw + 1rem), 500px);
+    
     height: 300px;
     background:#D6E5E3;
     border-radius:1rem;
@@ -68,7 +84,6 @@ body {
     color: #424874;
     z-index: 1;
     position: relative;
-    margin: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,6 +91,7 @@ body {
     flex-wrap: wrap;
     overflow: hidden;
     padding: 1rem;
+    margin: 1rem;
 
 
 
@@ -106,6 +122,7 @@ h1 {
     color: #FDFFFC;
     font-size: var(--font-size-h1);
     font-weight: 500;
+    font-family: 'league',sans-serif;
 }
 
 .region {
@@ -114,12 +131,14 @@ h1 {
 }
 
 p {
-    font-size: var(--font-size-p);
-    color: #011627;
-    font-weight: 500;
+   
+    color: #e3e6e9;
     padding: 1rem;
     text-align: start;
+    font-family: 'league',sans-serif;
+    
 }
+
 
 button {
    padding: min(2em,2%);
@@ -129,12 +148,16 @@ button {
    border: none;
    cursor: pointer;
    font-weight: 500;
+   transition: scale 0.2s ease-in-out;
+   background: rgba(255, 255, 255, 0.445);
+   backdrop-filter: blur(10px);
+   
    
 }
 button:hover {
     
     transform: scale(1.02);
-    transition: scale 0.2s ease-in-out;
+    
 }
 .background-img {
     position: absolute;
@@ -172,6 +195,8 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: all 0.2s ease-in;
+   
 
   
     
@@ -182,7 +207,11 @@ button:hover {
    backdrop-filter: blur(10px);
    transform: scale(1.01);
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-   transition: all 0.2s ease-in-out;
+ 
+   p {
+    color: #000000;
+   
+}
    
    
 
