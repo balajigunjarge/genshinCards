@@ -28,6 +28,3 @@ A React application that displays characters from *Genshin Impact* with characte
 - Array of object for character data
 
 ---
-
-## 📁 File Structure
-
