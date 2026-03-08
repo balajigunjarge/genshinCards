@@ -2,7 +2,7 @@
 const Cards = (props) => {
   return (
     <div className='w-80 h-85 bg-[#ffffff40] rounded-4xl p-4 border shadow- shadow-xl/50 border-[#ffffff83]
-     shadow-[#ffffffab] backdrop-blur-sm'>
+     shadow-[#0000005b] backdrop-blur-sm'>
      <div className="relative">
       <img className="w-80 rounded-2xl" src={props.backgroundImage}/>
 
