@@ -8,6 +8,6 @@ background: radial-gradient(
     rgba(238, 174, 202, 1) 40%,
     rgba(202, 179, 214, 1) 65%,
     rgba(148, 201, 233, 1) 100%);
-background-attachment: fixed;
-overflow-y: auto;
+  /* background-attachment: fixed;
+  overflow-y: auto; */
 }
