@@ -6,20 +6,20 @@ const Cards = (props) => {
 
 
       <div className="relative">
-        <img className="w-80 rounded-2xl ease-in block" src={props.backgroundImage} loading="lazy"  />
+        <img className="w-80 h-30 rounded-2xl ease-in block" src={props.backgroundImage} loading="lazy"  />
 
         <div className=" flex absolute top-1/4 left-6">
-          <div className="w-20 rounded-3xl overflow-clip">
 
-            <img
-              className="w-full h-full object-cover object-center rounded-3xl block ease-in "
+
+          <img
+              className="w-18 h-18  rounded-3xl"
               src={props.image}
               alt={props.name}
               loading="lazy"
 
 
             />
-          </div>
+
           <div className="p-1">
 
             <h1 className={`${styles.title} text-[#F6F8FF]`}>{props.name}</h1>
