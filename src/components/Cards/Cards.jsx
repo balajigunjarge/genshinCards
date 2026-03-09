@@ -6,7 +6,7 @@ const Cards = (props) => {
 
 
       <div className="relative">
-        <img className="w-80 h-30 rounded-2xl ease-in block" src={props.backgroundImage} loading="lazy"  />
+        <img className="w-80 h-30 rounded-2xl" src={props.backgroundImage} loading="lazy" draggable={"false"} />
 
         <div className=" flex absolute top-1/4 left-6">
 
@@ -16,6 +16,7 @@ const Cards = (props) => {
               src={props.image}
               alt={props.name}
               loading="lazy"
+              draggable={"false"}
 
 
             />

@@ -5,15 +5,13 @@
 @font-face {
   font-family: 'genshin-sub';
   src: url('./fonts/genshin-sub.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+
   font-display: swap;
 }
 
 @font-face {
   font-family: 'popins';
   src: url('./fonts/Poppins-Medium.ttf') format('truetype');
-  /* IMPORTANT: Define the full range of weights the font supports */
 
 
   font-display: swap;
@@ -21,3 +19,6 @@
 
 
 
+html {
+  scroll-behavior: smooth;
+}

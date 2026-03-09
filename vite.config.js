@@ -9,6 +9,14 @@ export default defineConfig({
       babel: {
         plugins: [['babel-plugin-react-compiler']],
       },
-    }),tailwindcss()
+    }),tailwindcss(),{
+      name: 'force-full-reload',
+      handleHotUpdate({ server }) {
+        // Send a signal to the browser to do a full refresh
+        server.ws.send({ type: 'full-reload' });
+        // Return an empty array to stop the default HMR behavior
+        return [];
+      }
+    }
   ],
 })
